@@ -8,7 +8,7 @@ public class Main {
 		bookShelf.appendBook(new Book("책3"));
 		bookShelf.appendBook(new Book("책4"));
 		
-		java.util.Iterator it = bookShelf.iterator();
+		java.util.Iterator<?> it = bookShelf.iterator();
 		
 		while (it.hasNext()) {
 			Book book = (Book)it.next();
